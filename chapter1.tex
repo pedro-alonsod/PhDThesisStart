@@ -1,10 +1,10 @@
-\section{General information}
+\section{Title: To be filled after}
 Current version of the \texttt{cseethesis} document class is: \classversion.\\
 Last modification: \classdate\\
 
 \noindent As of version 3.0, the template is no longer backwards compatible.
 
-\subsection{About the document class}
+\subsection{Sub1...About the document class}
 This document class was originally created in 2002 when I was working on my own PhD thesis. Since then, many people used it, found bugs (and occasionally even corrected them), and suggested improvements.
 
 The style is tailor-made for the typical types of theses that we write at the department, i.e.\ an introductory part followed by a collection of published or submitted research papers. 
@@ -16,16 +16,21 @@ The template is totally free to use, modify and distribute, as long as reference
 The whole package comes AS IS. I will correct bugs every now and then, but other than that, don't expect any support whatsoever.
 
 
-\subsection{About this document}
+\subsection{Sub2...About this document}
 This document, as well as the actual \LaTeX\ code for it, makes up the documentation on how to use the document class.
 
 Only this chapter contains any readable information. Chapters 2 and 3 are only included as examples of some of the features of the template. The text is nonsense, but the corresponding \LaTeX\ code may be of some use. The same goes for the appended papers, which are only there as examples of a few options of the document class.
 
 Read this chapter carefully. If you have comments on what else should be in here in order to simplify the use of the document class, let me know.
 
-\section{Chapters}
+\section{Introduction...Chapters}
 \subsection{Defining chapters}
-In order to add flexibility to the template, a new command, called \texttt{$\backslash$makechapter} is provided. This command takes three mandatory and one optional argument, as 
+Background info and context
+General focus
+Thesis statement (research Qs?)
+Attract attn.
+Why this topic
+%In order to add flexibility to the template, a new command, called \texttt{$\backslash$makechapter} is provided. This command takes three mandatory and one optional argument, as 
 \begin{center}
 	\texttt{$\backslash$makechapter[optional quote]\{page header\}\{toc entry\}\{Chapter title\}}
 \end{center}
@@ -39,8 +44,11 @@ The sub-documents containing the chapters should start directly, i.e.\ they must
 
 See this file, \textit{chapter1.tex} for details.
 
-\section{How to append papers}
-Papers are included using the \texttt{$\backslash$input} command, just as with chapters. You have to typeset paper title, authors, and abstract manually. See the example papers accompanying this document for an example.
+\section{Methodology section...How to append papers}
+data collection analysis and interpretation how? Here!
+Description of the process
+
+%Papers are included using the \texttt{$\backslash$input} command, just as with chapters. You have to typeset paper title, authors, and abstract manually. See the example papers accompanying this document for an example.
 
 To make the separator sheet preceding each paper, use one of the following commands:
 \begin{itemize}
@@ -52,11 +60,15 @@ To make the separator sheet preceding each paper, use one of the following comma
 
 See code for this example document for examples on how to use.
 
-\section{Cross-references}
-All labels throughout the thesis have to be unique. If the same
-equation or figure shows up twice e.g.\ a figure used
-both in the introduction and one of the included papers), it has
-to be given different labels. Referring to labels is done as
+\section{Literature Review... Cross-references}
+Overview of major or important works for this topic
+Cite
+Find gap
+Fill gap
+%All labels throughout the thesis have to be unique. If the same
+%equation or figure shows up twice e.g.\ a figure used
+%both in the introduction and one of the included papers), it has
+%to be given different labels. Referring to labels is done as
 usual.
 
 A simple trick to make sure this is the case and that will also help you keep track of all labels you used is to use the following naming convention:
@@ -67,18 +79,25 @@ A simple trick to make sure this is the case and that will also help you keep tr
 
 For existing text, e.g.\ papers, this is easily achieved by a simple search-and-replace operation on the string \texttt{$\backslash$label\{}. Any text editor will do that for you!
 
-\section{Appendices\label{sec:app}}
-It is possible to have any number of appendices for each chapter.
-Simply type \texttt{$\backslash$appendix} before the first appendix,
-which is then a normal \texttt{section}, but numbered differently.
+\section{Results Section.... Appendices\label{sec:app}}
+What did I find?
+What did I not find?
+What I did find that was not expected?
+%It is possible to have any number of appendices for each chapter.
+%Simply type \texttt{$\backslash$appendix} before the first appendix,
+%which is then a normal \texttt{section}, but numbered differently.
 
 To add appendices to papers, use the
 \texttt{$\backslash$paperappendix} command
 
-\section{Including bibliography lists\label{sec:bib}}
-In a thesis one might want several separate bibliographies. For
-example, one for the first part, and then separate bibliographies
-for each of the included papers.
+\section{Dicussion Section... Including bibliography lists\label{sec:bib}}
+Interpret results
+Data supports goals?
+Contribution or new?
+Limitation (scope)
+%In a thesis one might want several separate bibliographies. For
+%example, one for the first part, and then separate bibliographies
+%for each of the included papers.
 
 This is solved using the \texttt{bibunits} package together with a
 slight work-around in this template. For the first part of the
@@ -94,7 +113,7 @@ Note that the command
 	\item \texttt{$\backslash$putbib} is used in the papers in Part II.
 \end{itemize}
 
-\section{How to compile your project}
+\section{Conclusion Section... How to compile your project}
 Finally, you probably like to know how to build your project to a
 final PDF or PostScript file. Start by verifying that you can
 compile this document. This is how it goes:
@@ -111,8 +130,8 @@ The above steps are easily collected in a script or batch file. See
 the files \texttt{make.bat} and \texttt{compilebibunits.bat} for
 examples.
 
-\section{Revision history}
-The template has evolved during several years and the exact
+\section{If I'm here is completed... Revision history}
+By following :  \href{https://www.slideshare.net/NasreddineELGUEZAR/how-to-write-a-research-monograph-basics}{presentation} The template has evolved during several years and the exact
 revisions are not clear to anyone. Starting from version 1.6,
 however, the changes are more well-documented. This example
 document will always support only the latest release of the

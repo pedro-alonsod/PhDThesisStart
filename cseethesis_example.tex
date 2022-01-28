@@ -6,6 +6,8 @@
 %Included for Gather Purpose only:
 %input "thesisreferences.bib"
 
+\usepackage{hyperref}
+
 \makeglossaries
 
 \newacronym{nlp}{NLP}{Natural Language Processing}
@@ -82,18 +84,17 @@ Lule{\aa} University of Technology\\ Lule{\aa}, Sweden}
 
 \def\myquote{``This report, by its very length, defends itself against the risk of being read."\\[.5\baselineskip] Winston Churchill}
 
-\makechapter[\myquote]{Thesis Introduction}{Thesis Introduction}{Thesis
+\makechapter[\myquote]{Chapter 1: Title}{Thesis Introduction}{Thesis
 Introduction\label{ch1}}
 \input{chapter1.tex}
 
-\makechapter{Running header}{Table of contents entry}{Title
-appearing on the\\ chapter start page\label{ch2}}
+\makechapter{Chapter 2: Verification Resources}{Table of contents entry}{Running title appendixes of sorts\\ \label{ch2}}
 \input{chapter2.tex}
 
-\makechapter{Nonsense chapter}{Nonsense chapter}{Nonsense chapter, here only to verify that some issues in previous versions are really resolved!}
-\input{chapter3.tex}
-
-\makechapter{Nonsense chapter}{Nonsense chapter}{Nonsense chapter, here only to verify that some issues in previous versions are really resolved!}
+%\makechapter{Nonsense chapter}{Nonsense chapter}{Nonsense chapter, here only to verify that some issues in previous versions are really resolved!}
+%\input{chapter3.tex}
+%
+%\makechapter{Nonsense chapter}{Nonsense chapter}{Nonsense chapter, here only to verify that some issues in previous versions are really resolved!}
 %\input{chapter3.tex}
 
 \makebib
@@ -103,93 +104,93 @@ appearing on the\\ chapter start page\label{ch2}}
 %% Begin Part II - Collection of papers
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\makepartpage{Part II}%
-\startpapers
-
-%-------------------------------------------------------------------
-\def\paperheader{Paper A}
-\def\papertitle{The Title of the Papers in the Thesis are Automatically Split In Several Lines if Necessary}
-\def\paperauthorstring{John Doe and Jane Doe}
-\def\referencestring{Example Thesis, Internal Report, Lule{\aa} University of Technology, 2002.}
-\def\copyrightstring{2002, The Publisher, Reprinted with permission.}
-
-% The definitions above could just as well be put directly into the function
-% call below, but were explicitly defined to more clearly illustrate the
-% use of the function \makepaper.
-
-\makepaper
-  {\paperheader}
-  {\papertitle}
-  {\paperauthorstring}
-  {\referencestring}
-  {\copyrightstring}
-
-% The actual contents is imported by un-commenting the \input line below.
-% Make sure the file exist.
-\input{paper1.tex}
-
-
-%-------------------------------------------------------------------
-\def\paperheader{Paper B}
-\def\papertitle{The Theory of Research}
-\def\paperauthorstring{John Doe and Jane Doe}
-\def\referencestring{Example Thesis, Internal Report, Lule{\aa} University of Technology, 2009.}
-\def\copyrightstring{2009, The Publisher, Reprinted with permission.}
-
-% The definitions above could just as well be put directly into the function
-% call below, but were explicitly defined to more clearly illustrate the
-% use of the function \makepaper.
-
-\makepaperaccepted
-  {\paperheader}
-  {\papertitle}
-  {\paperauthorstring}
-  {\referencestring}
-  {\copyrightstring}
-
-% The actual contents is imported by un-commenting the \input line below.
-% Make sure the file exist.
-\input{paper2.tex}
-
-%-------------------------------------------------------------------
-\def\paperheader{Paper C}
-\def\papertitle{Yet Another Sub-Optimal Estimator of Sinusoids in Noise}
-\def\paperauthorstring{Dr.\ C}
-\def\referencestring{Example Thesis, Internal Report, Lule{\aa} University of Technology, 2009.}
-\def\copyrightstring{2009, The Publisher, Reprinted with permission.}
-
-% The definitions above could just as well be put directly into the function
-% call below, but were explicitly defined to more clearly illustrate the
-% use of the function \makepaper.
-
-\makepapersubmitted
-  {\paperheader}
-  {\papertitle}
-  {\paperauthorstring}
-  {\referencestring}
-  {\copyrightstring}
-
-% The actual contents is imported by un-commenting the \input line below.
-% Make sure the file exist.
-\input{paper3.tex}
-
-%-------------------------------------------------------------------
-\def\paperheader{Paper D}
-\def\papertitle{An example of a yet-to-be-submitted paper}
-\def\paperauthorstring{Dr.\ C}
-
-% The definitions above could just as well be put directly into the function
-% call below, but were explicitly defined to more clearly illustrate the
-% use of the function \makepaper.
-
-\makepapertobesubmitted
-  {\paperheader}
-  {\papertitle}
-  {\paperauthorstring}
-
-% The actual contents is imported by un-commenting the \input line below.
-% Make sure the file exist.
-\input{paper3.tex}
+%\makepartpage{Part II}%
+%\startpapers
+%
+%%-------------------------------------------------------------------
+%\def\paperheader{Paper A}
+%\def\papertitle{The Title of the Papers in the Thesis are Automatically Split In Several Lines if Necessary}
+%\def\paperauthorstring{John Doe and Jane Doe}
+%\def\referencestring{Example Thesis, Internal Report, Lule{\aa} University of Technology, 2002.}
+%\def\copyrightstring{2002, The Publisher, Reprinted with permission.}
+%
+%% The definitions above could just as well be put directly into the function
+%% call below, but were explicitly defined to more clearly illustrate the
+%% use of the function \makepaper.
+%
+%\makepaper
+%  {\paperheader}
+%  {\papertitle}
+%  {\paperauthorstring}
+%  {\referencestring}
+%  {\copyrightstring}
+%
+%% The actual contents is imported by un-commenting the \input line below.
+%% Make sure the file exist.
+%\input{paper1.tex}
+%
+%
+%%-------------------------------------------------------------------
+%\def\paperheader{Paper B}
+%\def\papertitle{The Theory of Research}
+%\def\paperauthorstring{John Doe and Jane Doe}
+%\def\referencestring{Example Thesis, Internal Report, Lule{\aa} University of Technology, 2009.}
+%\def\copyrightstring{2009, The Publisher, Reprinted with permission.}
+%
+%% The definitions above could just as well be put directly into the function
+%% call below, but were explicitly defined to more clearly illustrate the
+%% use of the function \makepaper.
+%
+%\makepaperaccepted
+%  {\paperheader}
+%  {\papertitle}
+%  {\paperauthorstring}
+%  {\referencestring}
+%  {\copyrightstring}
+%
+%% The actual contents is imported by un-commenting the \input line below.
+%% Make sure the file exist.
+%\input{paper2.tex}
+%
+%%-------------------------------------------------------------------
+%\def\paperheader{Paper C}
+%\def\papertitle{Yet Another Sub-Optimal Estimator of Sinusoids in Noise}
+%\def\paperauthorstring{Dr.\ C}
+%\def\referencestring{Example Thesis, Internal Report, Lule{\aa} University of Technology, 2009.}
+%\def\copyrightstring{2009, The Publisher, Reprinted with permission.}
+%
+%% The definitions above could just as well be put directly into the function
+%% call below, but were explicitly defined to more clearly illustrate the
+%% use of the function \makepaper.
+%
+%\makepapersubmitted
+%  {\paperheader}
+%  {\papertitle}
+%  {\paperauthorstring}
+%  {\referencestring}
+%  {\copyrightstring}
+%
+%% The actual contents is imported by un-commenting the \input line below.
+%% Make sure the file exist.
+%\input{paper3.tex}
+%
+%%-------------------------------------------------------------------
+%\def\paperheader{Paper D}
+%\def\papertitle{An example of a yet-to-be-submitted paper}
+%\def\paperauthorstring{Dr.\ C}
+%
+%% The definitions above could just as well be put directly into the function
+%% call below, but were explicitly defined to more clearly illustrate the
+%% use of the function \makepaper.
+%
+%\makepapertobesubmitted
+%  {\paperheader}
+%  {\papertitle}
+%  {\paperauthorstring}
+%
+%% The actual contents is imported by un-commenting the \input line below.
+%% Make sure the file exist.
+%\input{paper3.tex}
 
 
 \printglossary[type=\acronymtype]
